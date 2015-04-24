@@ -1,0 +1,49 @@
+<!-- 
+  HTML5 Doctype. Enforces standards mode and consistent rendering in most browsers.
+-->
+<!DOCTYPE html>
+<!-- 
+  Root HTML element with the lang attribute. 
+  lang makes life easier for screenreaders and speech synthesis tools.
+  Read more here: http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-html-element
+-- >
+<html lang="en-us">
+  <head>
+    <!-- 
+      Specify character encoding
+    -->
+    <meta charset="UTF-8">
+    <!--
+      Internet Explorer supports the use of a document compatibility <meta> tag to specify what version of IE the page should be rendered as. 
+      It's most useful to instruct IE to use the latest supported mode with edge mode.
+    -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--
+      Specify initial viewport dimesions for mobile devices.
+      initial-scale specifies what the initial ratio between device-width and device-height is at render time.
+      maximum-scale defines the maximum zoom value. It must be greater or equal to minimum-scale, or the user-agent ignores it.
+      minimum scale has a default value of 1. 
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="author" content="Achal Varma">
+    <meta name="description" content="Simmer is an HTML Boilerplate you can copy paste and and use whenever you start a new project.">
+    
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <title>
+      Simmer – An HTML Boilerplate you can copy-pasta.
+    </title>
+    <!--
+      CSS and JavaScript includes.
+      There is usually no need to specify a type when including CSS and JavaScript files, since text/css and text/javascript are their respective defaults in HTML5.
+    -->
+    <link rel="stylesheet" href="path/to/style.css">
+    <script src="path/to/script.js"></script>
+    <!--
+      Specify inline styles.
+      Note: Inline styles are a bad idea unless you're using them to prevent JavaScript from blocking render-critical CSS.
+      CSS is *required* to construct the render tree, and JavaScript will often block it during the initial construction of
+      your page. To improve performance, you may want to consider inlining critical above-the-fold CSS directly into the HTML document.
+    -->
+    <style></style>
+  </head>
+</html>
